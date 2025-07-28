@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>URL QR Code Generator</h2>
+        <input type="text" id="urlInput" placeholder="Enter URL...">
+        <div id="errorMessage" class="error-message"></div>
+        <div id="qrcode"></div>
+        
+        <div class="buttons">
+            <button onclick="generateQR()">Generate QR Code</button>
+            <a id="downloadBtn" style="display: none;" download="qrcode.png">Download QR Code</a>
+            <button id="resetBtn" style="display: none;" onclick="resetQR()" class="reset">Reset</button>
+        </div>
+    </div>
+    <hr    />
+
+    <div>
+        <footer>
+            <p>2025 @ QR Code Genertor | All Rights Reserved.
+                <a href= target="_blank">Privacy Policy</a>
+                <a href= target="_blank">Terms and Conditions</a>
+            </p>
+            
+            
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="QR-Code-Generator.js"></script>
+</body>
+</html>
